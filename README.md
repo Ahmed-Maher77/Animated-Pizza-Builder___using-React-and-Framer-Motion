@@ -13,7 +13,7 @@ Google Fonts
 
 <hr/>
 
-🌐**Demo (Live Preview):** <a href="" target="_blank"></a> 
+🌐**Demo (Live Preview):** <a href="https://animated-pizza-builder.netlify.app/" target="_blank">https://animated-pizza-builder.netlify.app/</a> 
 
 <hr/>
 
