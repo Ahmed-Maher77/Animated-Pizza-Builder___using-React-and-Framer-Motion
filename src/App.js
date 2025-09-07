@@ -1,46 +1,87 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Header from './components/Header';
-import Home from './components/Home';
-import Base from './components/Base';
-import Toppings from './components/Toppings';
-import Order from './components/Order';
-import Modal from './components/Modal';
-import { AnimatePresence } from 'framer-motion';
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Base from "./components/Base";
+import Toppings from "./components/Toppings";
+import Order from "./components/Order";
+import Modal from "./components/Modal";
+import Loader from "./components/Loader";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
-  const location = useLocation();
-  const [pizza, setPizza] = useState({ base: "", toppings: [] });
-  const [showModal, setShowModal] = useState(false);
+	const location = useLocation();
+	const [pizza, setPizza] = useState({ base: "", toppings: [] });
+	const [showModal, setShowModal] = useState(false);
+	const [loading, setLoading] = useState(true);
 
-  const addBase = (base) => {
-    setPizza({ ...pizza, base });
-  };
-  
-  const addTopping = (topping) => {
-    let newToppings;
-    if (!pizza.toppings.includes(topping)) {
-      newToppings = [...pizza.toppings, topping];
-    } else {
-      newToppings = pizza.toppings.filter(item => item !== topping);
-    }
-    setPizza({ ...pizza, toppings: newToppings });
-  };
+	const addBase = (base) => {
+		setPizza({ ...pizza, base });
+	};
 
-  return (
-    <>
-      <Header />
-      <Modal showModal={showModal} />
-      <AnimatePresence exitBeforeEnter onExitComplete={() => setShowModal(false)}>
-        <Routes location={location} key={location.key}>
-          <Route path="/base" element={<Base addBase={addBase} pizza={pizza} />} />
-          <Route path="/toppings" element={<Toppings addTopping={addTopping} pizza={pizza} />} />
-          <Route path="/order" element={<Order pizza={pizza} setShowModal={setShowModal} />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </AnimatePresence>
-    </>
-  );
+	const addTopping = (topping) => {
+		let newToppings;
+		if (!pizza.toppings.includes(topping)) {
+			newToppings = [...pizza.toppings, topping];
+		} else {
+			newToppings = pizza.toppings.filter((item) => item !== topping);
+		}
+		setPizza({ ...pizza, toppings: newToppings });
+	};
+
+	useEffect(() => {
+		// Simulate loading time
+		const timer = setTimeout(() => {
+			setLoading(false);
+		}, 2000);
+
+		return () => clearTimeout(timer);
+	}, []);
+
+	return (
+		<>
+			{loading ? (
+				<Loader isFullScreen={true} />
+			) : (
+				<>
+					<Header />
+					<Modal showModal={showModal} />
+					<AnimatePresence
+						exitBeforeEnter
+						onExitComplete={() => setShowModal(false)}
+					>
+						<Routes location={location} key={location.key}>
+							<Route
+								path="/base"
+								element={
+									<Base addBase={addBase} pizza={pizza} />
+								}
+							/>
+							<Route
+								path="/toppings"
+								element={
+									<Toppings
+										addTopping={addTopping}
+										pizza={pizza}
+									/>
+								}
+							/>
+							<Route
+								path="/order"
+								element={
+									<Order
+										pizza={pizza}
+										setShowModal={setShowModal}
+									/>
+								}
+							/>
+							<Route path="/" element={<Home />} />
+						</Routes>
+					</AnimatePresence>
+				</>
+			)}
+		</>
+	);
 }
 
 export default App;
