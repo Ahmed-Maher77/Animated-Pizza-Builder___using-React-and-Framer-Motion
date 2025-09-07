@@ -38,7 +38,7 @@ A modern, interactive web application that lets users design and customize their
 
 ## 👀 Website Preview:
 <a href="https://animated-pizza-builder.netlify.app/" title="demo">
-  <img src="uploaded-img-on-github-readme" alt="website preview" width="400">
+  <img src="https://github.com/user-attachments/assets/527694b6-8594-4a32-b03f-30d9ce9c4a9c" alt="website preview - UI Mockup" width="400">
 </a>
 
 <hr>
