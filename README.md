@@ -1,35 +1,81 @@
-# Animated Pizza Builder
-A dynamic and interactive web application that allows users to customize and create their own pizzas. The app features smooth animations and an engaging user experience to make the customization process intuitive and enjoyable.
+# 🍕 Animated Pizza Builder
+
+A modern, interactive web application that lets users design and customize their own pizzas in an engaging way. Built with React and Framer Motion, the app features smooth animations, intuitive transitions, and a fully responsive design for a delightful user experience.
 
 <hr/>
 
-💻 **Used Technologies:** <br>
-- ReactJS
-- Framer Motion
-- React Router
-- Node.js (for project setup and development environment)
-- **Other Libraries / Tools:** <br>
-Google Fonts
+## 💻 **Technologies Used**
+
+- **ReactJS** – Component-based framework for building dynamic UIs.  
+- **Framer Motion** – Animation library for smooth, interactive transitions.  
+- **React Router** – Handles client-side routing and navigation.  
+- **Node.js** – Provides the development environment and dependency management.  
+- **Other Libraries / Tools:**
+    - **Google Fonts** – Enhances design with modern, readable typography.  
 
 <hr/>
 
-🌐**Demo (Live Preview):** <a href="https://animated-pizza-builder.netlify.app/" target="_blank">https://animated-pizza-builder.netlify.app/</a> 
+
+## 🌐 Live Demo:
+
+👉 **Animated Pizza Builder:** <a href="https://animated-pizza-builder.netlify.app/" target="_blank">https://animated-pizza-builder.netlify.app/</a> 
+
+<hr/>
+
+## 🎥 **Demo Video:** 
+
+📹 **Watch Video on LinkedIn:** <a href="" target="_blank">coming soon</a> 
 
 <hr/>
 
 ## ✨Key Features:
-- <b>Dynamic Animations:</b> Smooth animations for a more engaging user experience.
-- <b>Custom Pizza Builder:</b> Personalize pizzas with various options, visually represented.
-- <b>Smooth Transitions:</b> Fluid transitions between pages for a seamless experience.
-- <b>Responsive Design:</b> Fully responsive for consistent performance on all devices.
+- **Dynamic Animations:** Engaging, fluid animations enhance interactivity.
+- **Custom Pizza Builder:** Add and customize toppings with real-time visual updates.
+- **Smooth Page Transitions:** Seamless navigation between views.
+- **Responsive Design:** Optimized for desktops, tablets, and mobile devic
+
+<hr/>
+
+## 👀 Website Preview:
+<a href="https://animated-pizza-builder.netlify.app/" title="demo">
+  <img src="uploaded-img-on-github-readme" alt="website preview" width="400">
+</a>
 
 <hr>
 
-### 📥 Installation Instructions for Local Setup:
-To download and use this project locally, follow these steps:
-1. Setup Node.js Environment <br> 
-=> Ensure Node.js is installed on your PC. <mark>node -v</mark> <br/>
-2. Clone or Download the Repository <mark>git clone https://github.com/Ahmed-Maher77/Animated-Pizza-Builder___using-React-and-Framer-Motion.git</mark> <br/>
-=> Navigate to the project folder. <br/>
-3. Install Dependencies <br/>
-=> Run the following command in the terminal <mark>npm install</mark>
+## 📥 Installation Instructions
+Follow these steps to set up and run the project locally:
+
+1. **Install Node.js**
+    Ensure Node.js is installed on your system.
+    ```
+    node -v
+    ```
+2. **Clone the Repository**
+    ```
+    git clone https://github.com/Ahmed-Maher77/Animated-Pizza-Builder___using-React-and-Framer-Motion.git
+    cd Animated-Pizza-Builder___using-React-and-Framer-Motion
+    ```
+3. **Install Dependencies**
+    ```
+    npm install
+    ```
+4. **Run the Application**
+    ```
+    npm start
+    ```
+
+<hr/>
+
+## 📬 Contact & Contribution
+- 🧑‍💻 **Portfolio:** <a href="https://ahmedmaher-portfolio.vercel.app/" title="See My Portfolio">https://ahmedmaher-portfolio.vercel.app/</a>
+- 🔗 **LinkedIn:** <a href="https://www.linkedin.com/in/ahmed-maher-algohary" title="Contact via LinkedIn">https://www.linkedin.com/in/ahmed-maher-algohary</a>
+- 📧 **Email:** <a href="mailto:ahmedmaher.dev1@gmail.com" title="Contact via Email">ahmedmaher.dev1@gmail.com</a>
+
+> Contributions, suggestions, and bug reports are welcome. Feel free to open issues or pull requests.
+
+---
+
+## ⭐ Support
+
+If you found this project helpful or inspiring, please consider giving it a ⭐. Your support helps me grow and share more open-source projects like this!
